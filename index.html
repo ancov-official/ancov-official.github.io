@@ -1,78 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ancov Ltd. | Technology & Development</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #111;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-        }
-        .cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .cta:hover {
-            background: #0056b3;
-        }
-        footer {
-            background: #eee;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 60px;
-        }
-    </style>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-<header>
-    <h1>Ancov Ltd.</h1>
-    <p>Building smart technology for tomorrow</p>
-</header>
+<body class="bg-white text-gray-800 font-sans">
 
-<section>
-    <h2>About Us</h2>
-    <p>
-        Ancov Ltd. is a software development company, helping businesses solve complex problems with scalable technology solutions.
-    </p>
-    <p>
-        Our team delivers impactful products tailored to your goals.
-    </p>
-    <a href="mailto:hello@voyzan.com" class="cta">Contact Us</a>
+<!-- HERO SECTION -->
+<section class="bg-gray-900 text-white flex flex-col justify-center items-center text-center min-h-screen px-6">
+    <h1 class="text-6xl font-extrabold">Ancov Ltd.</h1>
+    <p class="mt-4 text-2xl text-gray-300">Building smart technology for tomorrow</p>
+    <a href="#about" class="mt-10 inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <i data-lucide="chevron-down" class="w-5 h-5"></i> Learn More
+    </a>
 </section>
 
-<footer>
-    © 2025 Ancov Ltd. | <a href="mailto:hello@voyzan.com">Contact Us</a>
+<!-- ABOUT SECTION -->
+<section id="about" class="max-w-4xl mx-auto py-24 px-6">
+    <h2 class="text-4xl font-semibold mb-8 flex items-center gap-2">
+        <i data-lucide="code" class="w-7 h-7 text-blue-600"></i> About Us
+    </h2>
+    <p class="mb-4 leading-relaxed text-lg">
+        Ancov Ltd. is a <strong>software development company</strong> focused on solving complex business problems with scalable, high-performance solutions.
+    </p>
+    <p class="mb-8 leading-relaxed text-lg">
+        We partner with companies across industries to create modern software products, streamline workflows, and enable automation.
+    </p>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="bg-gray-50 py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-semibold mb-12 flex items-center gap-2 text-gray-900">
+            <i data-lucide="settings" class="w-7 h-7 text-blue-600"></i> Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition bg-white">
+                <i data-lucide="server" class="w-8 h-8 mb-4 text-blue-600"></i>
+                <h3 class="text-xl font-semibold mb-2">Custom Software Development</h3>
+                <p class="text-sm leading-relaxed">
+                    End-to-end design and development of tailored software applications built to solve your unique business challenges.
+                </p>
+            </div>
+
+            <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition bg-white">
+                <i data-lucide="cloud" class="w-8 h-8 mb-4 text-blue-600"></i>
+                <h3 class="text-xl font-semibold mb-2">Cloud Automation</h3>
+                <p class="text-sm leading-relaxed">
+                    Automate infrastructure and workflows with scalable cloud-native solutions on AWS, GCP, or Azure.
+                </p>
+            </div>
+
+            <div class="border p-6 rounded-lg shadow-sm hover:shadow-md transition bg-white">
+                <i data-lucide="cpu" class="w-8 h-8 mb-4 text-blue-600"></i>
+                <h3 class="text-xl font-semibold mb-2">AI & Data Solutions</h3>
+                <p class="text-sm leading-relaxed">
+                    Leverage machine learning, NLP, and data-driven systems to gain actionable insights and boost efficiency.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="py-24 px-6 text-center">
+    <a href="mailto:hello@voyzan.com" class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">
+        <i data-lucide="mail" class="w-5 h-5"></i> Contact Us
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-100 text-center py-8 text-sm text-gray-600">
+    <p>© 2025 Ancov Ltd.</p>
+    <p class="mt-2">Ancov Ltd is a UK-based company focusing on software projects.</p>
 </footer>
+
+<script>
+	lucide.createIcons();
+</script>
 </body>
 </html>
